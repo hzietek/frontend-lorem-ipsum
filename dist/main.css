@@ -504,7 +504,6 @@ footer .footer-grid .column3 {
 }
 .cookies-wrapper .cookies-items {
   display: flex;
-  flex-direction: row;
   align-items: center;
   max-width: 800px;
   background-color: #fff;
