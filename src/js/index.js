@@ -1,21 +1,21 @@
+let bullet = document.querySelectorAll(".bullet");
 let prevScrollpos = window.pageYOffset;
-const bullet = document.querySelectorAll(".bullet");
-const langFirst = document.querySelector(".lang-first");
-const products = document.querySelectorAll(".products");
-const nav = document.getElementsByTagName("nav")[0];
-const hero = document.querySelector(".hero");
+let langFirst = document.querySelector(".lang-first");
+let products = document.querySelectorAll(".products");
+let nav = document.getElementsByTagName("nav")[0];
+let hero = document.querySelector(".hero");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
-const cookiesButton = document.querySelector(".cookies-button");
-const placeholder = document.querySelectorAll(".placeholder");
-const placeholderArrow = document.querySelectorAll(".placeholder-arrow");
-const arrowPath = document.querySelectorAll(".arrow-path");
-const langOptions = document.querySelectorAll(".lang-item");
-const footerArrow = document.querySelector(".footer-arrow");
-const dropdownMenu = document.querySelectorAll(".dropdown-menu")[0];
-const dropdownMenu2 = document.querySelectorAll(".dropdown-menu")[1];
-const picture = document.querySelectorAll(".picture");
-const background = document.querySelectorAll(".background");
+let cookiesButton = document.querySelector(".cookies-button");
+let placeholder = document.querySelectorAll(".placeholder");
+let placeholderArrow = document.querySelectorAll(".placeholder-arrow");
+let arrowPath = document.querySelectorAll(".arrow-path");
+let langOptions = document.querySelectorAll(".lang-item");
+let footerArrow = document.querySelector(".footer-arrow");
+let dropdownMenu = document.querySelectorAll(".dropdown-menu")[0];
+let dropdownMenu2 = document.querySelectorAll(".dropdown-menu")[1];
+let picture = document.querySelectorAll(".picture");
+let background = document.querySelectorAll(".background");
 const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
 for (let i = 0; i <= 2; i++) {
