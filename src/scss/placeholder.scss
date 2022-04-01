@@ -1,0 +1,104 @@
+.placeholder-section {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: $background;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  .placeholder-items {
+    display: flex;
+
+    .placeholder {
+      margin: 0 10px;
+      position: relative;
+
+      .transform {
+        height: 80px;
+        background-color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: transform 0.3s;
+
+        &.hover {
+          transform: scaleY(4) translateY(-36%);
+        }
+      }
+
+      img {
+        position: absolute;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 230px;
+        margin: 20px 100px;
+        transform: translateY(-230px);
+        object-fit: cover;
+        z-index: 10;
+        transition: transform 0.3s;
+
+        &.hover {
+          transform: translateY(-230px) scale(1.1) rotate(5deg);
+        }
+      }
+
+      .placeholder-info {
+        height: 150px;
+        background-color: #fff;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-top: 50px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 432px;
+
+        h3 {
+          display: inline-block;
+          font-size: 24px;
+          line-height: 22px;
+          margin-bottom: 30px;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: normal;
+        }
+
+        .parameters {
+          display: flex;
+          text-align: center;
+
+          div {
+            font-size: 18px;
+            line-height: 22px;
+            margin: 0 40px;
+          }
+        }
+      }
+
+      .placeholder-arrow {
+        background-color: #fff;
+        border-radius: 50%;
+        bottom: 0;
+        box-shadow: 10px 10px 30px rgb(0 0 0 / 5%);
+        height: 80px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,50%);
+        transition: .2s ease;
+        width: 80px;
+
+        .arrow-svg {
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%,-50%) rotate(90deg);
+        }
+      }
+    }
+  }
+}
