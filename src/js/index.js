@@ -104,7 +104,7 @@ rightArrow.addEventListener("click", () => {
 });
 
 cookiesButton.addEventListener("click", () => {
-  let wrapper = document.querySelector(".cookies-wrapper");
+  const wrapper = document.querySelector(".cookies-wrapper");
   wrapper.style.display = "none";
 });
 
