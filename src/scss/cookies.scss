@@ -22,7 +22,7 @@
 
     .cookies-button {
       margin: 0 auto;
-      button {
+      button { // enter between margin and button
         background-color: $darker-gray;
         border-radius: 50px;
         color: $background;
