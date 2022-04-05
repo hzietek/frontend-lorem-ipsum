@@ -12,7 +12,7 @@
   background-color: $darker-gray;
   color: $very-light-gray;
   font-size: 14px;
-  transform: translate(0px, 0px);
+  transform: translate(0px, 0px); // transform 0, 0 ? 0px in Y and 0 in X? no changes at all?
 
   a {
     display: inline;
