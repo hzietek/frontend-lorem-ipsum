@@ -19,7 +19,7 @@ footer {
     left: 50%;
     height: 50px;
     width: 50px;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -30,10 +30,15 @@ footer {
     padding-left: 0;
     grid-template-columns: 30% 40% 30%;
     grid-template-areas:
-     "column1 column2 column3"
-     "column1 column2 logo";
-     height: 80%;
-     width: 80%;
+      "column1 column2 column3"
+      "column1 column2 logo";
+    height: 80%;
+    width: 80%;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .logo-footer {
       display: flex;
@@ -42,7 +47,7 @@ footer {
       align-items: flex-end;
 
       svg {
-      width: 120px;
+        width: 120px;
       }
     }
 
@@ -50,6 +55,7 @@ footer {
       display: flex;
       flex-direction: column;
       color: #eee;
+      margin: 25px 10px;
 
       a {
         color: #eee;

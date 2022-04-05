@@ -1,5 +1,6 @@
 .social-pictures {
   display: flex;
+  flex-wrap: wrap;
   background-color: $background;
   padding: 100px 0;
   justify-content: center;
@@ -15,11 +16,21 @@
   .picture1 {
     top: -50px;
     left: 75px;
+
+    @media (max-width: 1200px) {
+      top: auto;
+      left: auto;
+    }
   }
 
   .picture3 {
     bottom: -50px;
     right: 75px;
+
+    @media (max-width: 1200px) {
+      bottom: auto;
+      right: auto;
+    }
   }
 
   .background {
