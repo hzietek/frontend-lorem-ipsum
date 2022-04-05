@@ -5,6 +5,8 @@ const langOptions = document.querySelectorAll(".lang-item");
 const products = document.querySelectorAll(".products");
 const dropdownMenu = document.querySelectorAll(".dropdown-menu");
 
+// again - dont use style in JS, change classes
+
 nav.addEventListener("mouseleave", () => {
   dropdownMenu[0].style.display = "none";
   dropdownMenu[1].style.display = "none";
@@ -14,7 +16,7 @@ nav.addEventListener("mouseleave", () => {
 });
 
 window.onscroll = function () {
-  let currentScrollPosition = window.pageYOffset;
+  let currentScrollPosition = window.pageYOffset; // why not const
   if (prevScrollPosition >= currentScrollPosition) {
     document.getElementsByClassName("topbar-black")[0].style.top = "0";
     nav.style.top = "40px";
